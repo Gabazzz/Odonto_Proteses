@@ -2,17 +2,17 @@
 
 :root {
     /* Color Palette */
-    --bg-dark: #0a0f1d;
+    --bg-dark: #0A1710;
     --bg-card: rgba(15, 23, 42, 0.45);
     --bg-card-hover: rgba(30, 41, 59, 0.6);
-    --primary: #0ea5e9;
-    --primary-hover: #0284c7;
-    --accent: #14b8a6;
-    --accent-hover: #0d9488;
+    --primary: #1B6B58;
+    --primary-hover: #25957A;
+    --accent: #34C99E;
+    --accent-hover: #28A884;
     --text-main: #f8fafc;
     --text-muted: #94a3b8;
     --border-color: rgba(255, 255, 255, 0.08);
-    --border-glow: rgba(14, 165, 233, 0.3);
+    --border-glow: rgba(27, 107, 88, 0.35);
     
     /* Fonts */
     --font-heading: 'Outfit', sans-serif;
@@ -22,7 +22,7 @@
     --container-max: 1200px;
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     --shadow-premium: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-    --shadow-glow: 0 0 20px rgba(14, 165, 233, 0.15);
+    --shadow-glow: 0 0 20px rgba(27, 107, 88, 0.18);
 }
 
 /* Reset */
@@ -128,8 +128,14 @@ header.scrolled .nav-wrapper {
 }
 
 .logo-icon {
-    font-size: 1.75rem;
-    color: var(--primary);
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    display: block;
 }
 
 .logo-text {
@@ -689,7 +695,7 @@ textarea.form-control {
 
 /* Footer Section */
 footer {
-    background: #060912;
+    background: #060E0A;
     border-top: 1px solid var(--border-color);
     padding: 80px 0 30px 0;
 }
@@ -901,6 +907,10 @@ footer {
     /* Header mobile navigation */
     .menu-btn {
         display: block;
+    }
+
+    .logo-img {
+        height: 34px;
     }
     
     .nav-menu {
