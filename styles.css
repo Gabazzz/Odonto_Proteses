@@ -688,10 +688,27 @@ header.scrolled .nav-wrapper {
     background: rgba(255, 255, 255, 0.05);
 }
 
+
 textarea.form-control {
     resize: none;
     min-height: 120px;
 }
+
+/* Utility: two-column image grid */
+.two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+/* Services: two-column centered layout */
+.two-col-services {
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Footer Section */
 footer {
@@ -911,6 +928,11 @@ footer {
 
     .logo-img {
         height: 34px;
+    }
+
+    .two-col-grid,
+    .two-col-services {
+        grid-template-columns: 1fr;
     }
     
     .nav-menu {

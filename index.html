@@ -13,7 +13,7 @@
     <!-- Performance Optimization: Preconnect & Preload -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="assets/images/dental_lab_hero.png" as="image">
+    <link rel="preload" href="assets/images/fachada.png" as="image">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
@@ -30,7 +30,7 @@
     <header id="header">
         <div class="container nav-wrapper">
             <a href="#" class="logo" id="logoLink">
-                <span class="logo-icon"><img src="assets/images/logo.png" alt="Odonto Prótese" class="logo-img"></span>
+                <span class="logo-icon"><img src="assets/images/logo-dark.png" alt="Odonto Prótese" class="logo-img"></span>
                 <span class="logo-text">ODONTO <span>PRÓTESE</span></span>
             </a>
             
@@ -86,7 +86,7 @@
                 
                 <div class="hero-visual reveal-right">
                     <div class="hero-img-container">
-                        <img src="assets/images/dental_lab_hero.png" alt="Laboratório de Prótese Dentária Odonto Prótese" class="hero-img" loading="eager">
+                        <img src="assets/images/fachada.png" alt="Fachada do Laboratório Odonto Prótese em Mato Verde - MG" class="hero-img" loading="eager">
                     </div>
                     <div class="hero-floating-card">
                         <div class="floating-icon">
@@ -104,9 +104,12 @@
         <!-- About Section -->
         <section class="section" id="sobre">
             <div class="container about-grid">
-                <div class="about-img-wrapper reveal-left">
+                <div class="about-img-wrapper reveal-left" style="display: flex; flex-direction: column; gap: 1.25rem;">
                     <div class="about-img-card">
-                        <img src="assets/images/dental_smile.png" alt="Estética e Reabilitação Oral" class="about-img" loading="lazy">
+                        <img src="assets/images/recepcao.png" alt="Recepção moderna da Odonto Prótese com logo na parede" class="about-img" loading="lazy" style="object-fit: cover; height: 260px; width: 100%;">
+                    </div>
+                    <div class="about-img-card">
+                        <img src="assets/images/equipe-reuniao.png" alt="Equipe Odonto Prótese em reunião com software CAD na TV" class="about-img" loading="lazy" style="object-fit: cover; height: 220px; width: 100%;">
                     </div>
                 </div>
                 
@@ -142,9 +145,9 @@
                     </p>
                 </div>
                 
-                <div class="services-grid">
+                <div class="services-grid two-col-services reveal">
                     <!-- Service 1 -->
-                    <div class="service-card reveal">
+                    <div class="service-card">
                         <span class="service-icon"><i class="fa-solid fa-tooth"></i></span>
                         <h3 class="service-title">Próteses Fixas</h3>
                         <p class="service-desc">
@@ -154,24 +157,19 @@
                     </div>
                     
                     <!-- Service 2 -->
-                    <div class="service-card reveal">
+                    <div class="service-card">
                         <span class="service-icon"><i class="fa-solid fa-circle-check"></i></span>
-                        <h3 class="service-title">Próteses Flexíveis & Removíveis</h3>
+                        <h3 class="service-title">Próteses Flexíveis &amp; Removíveis</h3>
                         <p class="service-desc">
                             Dispositivos parciais e totais móveis de alta flexibilidade, com grampos estéticos imperceptíveis e conforto.
                         </p>
                         <span class="service-tag">Conforto e Anatomia</span>
                     </div>
-                    
-                    <!-- Service 3 -->
-                    <div class="service-card reveal">
-                        <span class="service-icon"><i class="fa-solid fa-laptop-code"></i></span>
-                        <h3 class="service-title">Fluxo Digital CAD/CAM</h3>
-                        <p class="service-desc">
-                            Fresagem tridimensional computadorizada de zircônia, cera e acrílicos que elimina distorções e garante o encaixe perfeito.
-                        </p>
-                        <span class="service-tag">Fresagem 3D</span>
-                    </div>
+                </div>
+
+                <!-- Portfolio Image -->
+                <div class="reveal" style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-premium); border: 1px solid var(--border-color); margin-top: 2rem;">
+                    <img src="assets/images/proteses-impressora.png" alt="Próteses recém-impressas em plataforma de impressora 3D" style="width: 100%; height: 380px; object-fit: cover; display: block;" loading="lazy">
                 </div>
             </div>
         </section>
@@ -190,8 +188,8 @@
                         <div class="tech-item">
                             <span class="tech-item-icon"><i class="fa-solid fa-microchip"></i></span>
                             <div class="tech-item-content">
-                                <h3 class="tech-item-title">Fresadoras Computadorizadas</h3>
-                                <p class="tech-item-desc">Equipamentos alemães de fresagem de eixos múltiplos para blocos de zircônia e dissilicato de lítio.</p>
+                                <h3 class="tech-item-title">Impressoras 3D de Alta Precisão</h3>
+                                <p class="tech-item-desc">Frota própria de impressoras 3D odontológicas para produção simultânea de múltiplas peças com qualidade micrométrica e rastreabilidade total.</p>
                             </div>
                         </div>
                         <div class="tech-item">
@@ -205,7 +203,19 @@
                 </div>
                 
                 <div class="tech-visual reveal-right">
-                    <img src="assets/images/dental_cad_cam.png" alt="Fresadora CAD/CAM de Prótese Dentária" loading="lazy">
+                    <img src="assets/images/sala-impressoras.png" alt="Sala de impressoras 3D do laboratório Odonto Prótese" loading="lazy" style="object-fit: cover;">
+                </div>
+            </div>
+
+            <!-- Secondary tech images: technician + CAD -->
+            <div class="container" style="margin-top: 2.5rem;">
+                <div class="two-col-grid">
+                    <div class="reveal" style="border-radius: 20px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-premium); height: 340px;">
+                        <img src="assets/images/tecnico-impressora.png" alt="Técnico retirando plataforma de impressão 3D com próteses" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+                    </div>
+                    <div class="reveal" style="border-radius: 20px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-premium); height: 340px;">
+                        <img src="assets/images/cad-notebook.png" alt="Profissional modelando prótese em software CAD no notebook" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+                    </div>
                 </div>
             </div>
         </section>
@@ -216,7 +226,7 @@
                 <div class="contact-info reveal-left">
                     <div>
                         <span class="section-subtitle">Atendimento</span>
-                        <h2 class="contact-info-title">Faça sua Encomenda</h2>
+                        <h2 class="contact-info-title">Faça seu Orçamento</h2>
                         <p class="contact-info-desc">
                             Se você é dentista ou gestor clínico, preencha o formulário ao lado para abrir uma conversa direta no nosso WhatsApp Comercial de encomendas.
                         </p>
@@ -276,7 +286,7 @@
         <div class="container footer-grid">
             <div class="footer-brand">
                 <a href="#" class="logo" id="footerLogoLink">
-                    <span class="logo-icon"><img src="assets/images/logo.png" alt="Odonto Prótese" class="logo-img"></span>
+                    <span class="logo-icon"><img src="assets/images/logo-dark.png" alt="Odonto Prótese" class="logo-img"></span>
                     <span class="logo-text">ODONTO <span>PRÓTESE</span></span>
                 </a>
                 <p>Produção sob encomenda de peças protéticas com foco em durabilidade, estética natural e tecnologia digital.</p>
